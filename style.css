@@ -1,6 +1,22 @@
 body {
     background-color: #1c458b;
     color: white;
+    word-wrap: normal;
+    button{
+        border: 1px black solid;
+        cursor: pointer;
+        background-color: gold;
+    }
+    .menuButton {
+        position: fixed;
+    }
+    .menuContents{
+        position: fixed;
+        background-color: gold;
+        height: 100%;
+        width: 16%;
+
+    }
     h1{
         font-size: 50px;
         padding-bottom: 20px;
@@ -15,12 +31,21 @@ body {
         font-size: 50px;
         color: white;
     }
+    .carousel{
+        display: flex;
+        justify-content: center;
+        button{
+            margin-top: 12.5%;
+            height: 50px;
+        }
+        img{
+            width: 50%;
+        }
+    }
     .APClassroom{
-        border: 1px white solid;
-        display: inline-flex;
-        flex-direction: column;
-        justify-items: end;
-
+        display: flex;
+        height: 5%;
+        margin-left: 96%;
     }
     .grid{
         display: grid;
