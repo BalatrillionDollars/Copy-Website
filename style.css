@@ -1,16 +1,19 @@
 body {
+    margin: 0;
     background-color: #1c458b;
     color: white;
     word-wrap: anywhere;
     display: flex;
     flex-direction: row;
+    visibility: visible;
 }
     button{
         border: 1px black solid;
         cursor: pointer;
-        background-color: gold;
     }
-    .menuButton {
+    #menuButton {
+        background-color: transparent;
+        font-size: large;
         position: fixed;
         height: 33px;
         width: 33px;
@@ -45,6 +48,7 @@ body {
         button{
             margin-top: 12.5%;
             height: 50px;
+            background-color: gold;
         }
         img{
             width: 50%;
@@ -70,21 +74,24 @@ body {
         }
     }
     .menuContents {
-        position: static;
         background-color: gold;
         color: black;
-        height: 100vw;
-        width: 75%;
+        height: 100vh;
+        width: 50%;
+        justify-content: center;
         .menuGrid {
-            display: grid;
-            grid-template-columns: auto;
+            margin-top: 25%;
+
             h1{
+                font-size: 25px;
                 color: black;
             }
             .hover:hover {
                 background-color: white;
             }
         }
-        top: 0;
-        left: 0;
+
+        top:0;
+        left:0;
+        position: sticky;
     }
