@@ -9,5 +9,18 @@ function back(){
     document.getElementById("carouselImage").src = images[index % images.length];
 }
 function toggle(id){
-    document.getElementById(id).hidden = !document.getElementById(id).hidden;
+    if (document.getElementById(id).style.display === "none"){
+        document.getElementById(id).style.visibility="block";
+    }
+    else{
+        document.getElementById(id).style.visibility="none";
+    }
+}
+function updateColor(){
+    if(document.getElementById("MC").style.display==="none"){
+        document.getElementById('menuButton').style.color='white';
+    }
+    else{
+        document.getElementById('menuButton').style.color = 'black';
+    }
 }

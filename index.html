@@ -5,10 +5,13 @@
         <meta charset="UTF-8">
         <title>FHS Computer Science Program</title>
     </head>
-    <body onload="loading();">
+    <body>
             <div class = "menuContents" id = "MC">
                 <div class = "menuGrid" id = "grid">
-                    <h1 class = "hover" onclick="window.location.href = '#H1'">Computer Science Magnet Program</h1>
+                    <div class = "hover" onclick="window.location.href = '#H1'">
+                        <h1>Computer Science Magnet Program</h1>
+                        <p><strong>Freehold High School</strong></p>
+                    </div>
                     <h1 class = "hover" onclick="toggle('BS1')">Courses In The Program</h1>
                     <div id = "BS1">
                         <div onclick="window.location.href = '#H3'">
@@ -174,6 +177,6 @@
                     </div>
                 </div>
             </div>
-        <button onclick="toggle('MC')" class="menuButton">≣</button>
+        <button onclick="toggle('MC');" id="menuButton">≣</button>
     </body>
 </html>
