@@ -9,13 +9,17 @@ body {
     }
     .menuButton {
         position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .menuButton:hover {
+        background-color: white;
     }
     .menuContents{
-        position: fixed;
+        position: sticky;
         background-color: gold;
-        height: 100%;
+        height: 100vh;
         width: 16%;
-
     }
     h1{
         font-size: 50px;
@@ -24,12 +28,12 @@ body {
     p{
         font-size: 20px;
     }
-    .carousel{
-        height: 500px;
-    }
     a{
         font-size: 50px;
         color: white;
+    }
+    .carousel{
+        height: 500px;
     }
     .carousel{
         display: flex;

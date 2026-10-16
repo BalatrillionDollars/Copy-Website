@@ -8,8 +8,6 @@ function back(){
     index += images.length - 1;
     document.getElementById("carouselImage").src = images[index % images.length];
 }
-let isMenuShowing = true;
-function toggle(){
-    isMenuShowing = !isMenuShowing;
-    document.getElementById("MC").hidden = isMenuShowing;
+function toggle(id){
+    document.getElementById(id).hidden = !document.getElementById(id).hidden;
 }
