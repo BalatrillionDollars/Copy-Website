@@ -8,6 +8,7 @@ body {
 #everything{
     display: flex;
     flex-direction: row;
+    visibility: visible;
 }
     button{
         border: 1px black solid;
