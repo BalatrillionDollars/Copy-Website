@@ -3,9 +3,11 @@ body {
     background-color: #1c458b;
     color: white;
     word-wrap: anywhere;
+    visibility: visible;
+}
+#everything{
     display: flex;
     flex-direction: row;
-    visibility: visible;
 }
     button{
         border: 1px black solid;

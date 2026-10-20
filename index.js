@@ -10,17 +10,20 @@ function back(){
 }
 function toggle(id){
     if (document.getElementById(id).style.display === "none"){
-        document.getElementById(id).style.visibility="block";
+        document.getElementById(id).style.display="block";
     }
     else{
-        document.getElementById(id).style.visibility="none";
+        document.getElementById(id).style.display="none";
     }
 }
-function updateColor(){
+function mb(){
+    toggle("MC")
     if(document.getElementById("MC").style.display==="none"){
         document.getElementById('menuButton').style.color='white';
+        document.getElementById("menuButton").style.border='white 1px solid';
     }
     else{
         document.getElementById('menuButton').style.color = 'black';
+        document.getElementById("menuButton").style.border='black 1px solid';
     }
 }
